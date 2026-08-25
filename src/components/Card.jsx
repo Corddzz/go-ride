@@ -1,7 +1,7 @@
-const Card = ({ children, className }) => {
+const Card = ({ children, className = "" }) => {
   return (
     <div
-      className={`p-4 bg-indigo-500/10 border border-indigo-500 rounded-lg shadow-md shadow-indigo-500/10 mx-auto ${className}`}>
+      className={`rounded-xl border border-indigo-500/20 bg-indigo-500/5 p-6 shadow-lg shadow-indigo-500/5 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500/40 hover:shadow-indigo-500/20 ${className}`}>
       {children}
     </div>
   );
