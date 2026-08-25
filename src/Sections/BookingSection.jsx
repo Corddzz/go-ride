@@ -23,10 +23,10 @@ const BookingSection = () => {
         </h3>
 
         <form action="#">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-2 sm:p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-0 p-2 sm:p-4">
             <label
               htmlFor="pickup-location"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Pickup Location
               <input
                 type="text"
@@ -38,7 +38,7 @@ const BookingSection = () => {
 
             <label
               htmlFor="dropoff-location"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Drop-off Location
               <input
                 type="text"
@@ -50,7 +50,7 @@ const BookingSection = () => {
 
             <label
               htmlFor="pickup-date"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Pickup Date
               <input
                 type="date"
@@ -61,7 +61,7 @@ const BookingSection = () => {
 
             <label
               htmlFor="return-date"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Return Date
               <input
                 type="date"
@@ -72,7 +72,7 @@ const BookingSection = () => {
 
             <label
               htmlFor="car-type"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Car Type
               <select
                 id="car-type"
@@ -88,7 +88,7 @@ const BookingSection = () => {
 
             <label
               htmlFor="seater-type"
-              className="block mt-4 text-white/70 tracking-wider">
+              className="block mt-4 text-white/70 tracking-wider text-sm sm:text-base">
               Seater Type
               <select
                 id="seater-type"
@@ -102,10 +102,10 @@ const BookingSection = () => {
               </select>
             </label>
 
-            <div className="col-span-2 flex items-center justify-center py-4">
+            <div className="col-span-1 sm:col-span-2 flex items-center justify-center py-4">
               <button
                 type="submit"
-                className="hover:shadow-lg hover:shadow-indigo-500/50 bg-indigo-500 rounded-lg h-12 px-8 transition-all duration-300 text-white font-semibold">
+                className="w-full sm:w-auto hover:shadow-lg hover:shadow-indigo-500/50 bg-indigo-500 rounded-lg h-12 px-8 transition-all duration-300 text-white font-semibold">
                 Book Now
               </button>
             </div>
