@@ -130,7 +130,7 @@ const TestimonialSection = () => {
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-12">
           <h2
-            className="text-4xl font-bold text-indigo-100 mb-2"
+            className="text-3xl sm:text-4xl font-bold text-indigo-100 mb-2"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-delay="200"
@@ -147,10 +147,10 @@ const TestimonialSection = () => {
           </p>
         </div>
 
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center px-10 sm:px-12">
           <div className="w-full max-w-2xl overflow-hidden rounded-lg">
             <div
-              className="flex justify-center items-center h-96 slide-in"
+              className="flex justify-center items-center min-h-[26rem] sm:min-h-[24rem] slide-in"
               key={currentIndex}>
               <Testimonial
                 src={testimonials[currentIndex].src}
@@ -164,10 +164,10 @@ const TestimonialSection = () => {
           </div>
           <button
             onClick={prevSlide}
-            className="absolute left-0 z-10 p-2 text-indigo-400 hover:text-indigo-200 transition-colors duration-200 focus:outline-none"
+            className="absolute left-0 z-10 p-1 sm:p-2 text-indigo-400 hover:text-indigo-200 transition-colors duration-200 focus:outline-none"
             aria-label="Previous testimonial">
             <svg
-              className="w-8 h-8"
+              className="w-6 h-6 sm:w-8 sm:h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">
@@ -182,10 +182,10 @@ const TestimonialSection = () => {
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 z-10 p-2 text-indigo-400 hover:text-indigo-200 transition-colors duration-200 focus:outline-none"
+            className="absolute right-0 z-10 p-1 sm:p-2 text-indigo-400 hover:text-indigo-200 transition-colors duration-200 focus:outline-none"
             aria-label="Next testimonial">
             <svg
-              className="w-8 h-8"
+              className="w-6 h-6 sm:w-8 sm:h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">

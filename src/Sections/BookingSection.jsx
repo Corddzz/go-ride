@@ -8,13 +8,13 @@ const BookingSection = () => {
       data-aos-duration="800"
       data-aos-once="true">
       <Card
-        className="hover:shadow-indigo-500/50 transition-all duration-300"
+        className="w-full max-w-2xl hover:shadow-indigo-500/50 transition-all duration-300"
         data-aos="zoom-in"
         data-aos-duration="600"
         data-aos-delay="100"
         data-aos-once="true">
         <h3
-          className="text-center font-bold text-2xl text-indigo-400"
+          className="text-center font-bold text-xl sm:text-2xl text-indigo-400"
           data-aos="fade-down"
           data-aos-duration="500"
           data-aos-delay="200"
@@ -23,7 +23,7 @@ const BookingSection = () => {
         </h3>
 
         <form action="#">
-          <div className="grid grid-cols-2 gap-4 p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-2 sm:p-4">
             <label
               htmlFor="pickup-location"
               className="block mt-4 text-white/70 tracking-wider">

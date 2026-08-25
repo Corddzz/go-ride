@@ -52,7 +52,7 @@ const PricingSection = () => {
       data-aos-once="true">
       <div className="text-center mb-6">
         <h2
-          className="text-4xl font-bold text-indigo-100 my-6"
+          className="text-3xl sm:text-4xl font-bold text-indigo-100 my-6"
           data-aos="fade-down"
           data-aos-duration="600"
           data-aos-delay="100"
@@ -61,14 +61,14 @@ const PricingSection = () => {
         </h2>
       </div>
 
-      <div className="flex flex-row gap-8 p-4">
+      <div className="flex flex-col lg:flex-row gap-8 p-4 w-full max-w-md lg:max-w-6xl">
         {plans.map((plan, index) => (
           <Card
             key={plan.id}
-            className={`flex justify-between items-center flex-col transition-all duration-300 hover:translate-y-[-8px] ${
+            className={`flex justify-between items-center flex-col transition-all duration-300 hover:translate-y-[-8px] w-full ${
               plan.popular
-                ? "flex-[1.4] md:scale-105 border-indigo-500/40 bg-indigo-500/10 shadow-2xl shadow-indigo-500/20"
-                : "flex-1"
+                ? "lg:flex-[1.4] lg:scale-105 border-indigo-500/40 bg-indigo-500/10 shadow-2xl shadow-indigo-500/20"
+                : "lg:flex-1"
             }`}
             data-aos="zoom-in"
             data-aos-duration="700"

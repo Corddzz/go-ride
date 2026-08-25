@@ -16,7 +16,7 @@ const AboutSection = () => {
       data-aos-once="true">
       <div className="max-w-3xl text-center p-4">
         <span
-          className="text-2xl font-semibold uppercase tracking-widest text-indigo-500"
+          className="text-base sm:text-xl md:text-2xl font-semibold uppercase tracking-widest text-indigo-500"
           data-aos="fade-down"
           data-aos-duration="500"
           data-aos-delay="100"
